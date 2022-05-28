@@ -1,0 +1,159 @@
+
+/*BACKGROUND*/
+ #root, #offcanvasWithBothOptions{
+  color: whitesmoke;
+  background-color: black;
+} 
+.navbar{
+  background-color: black;
+  border-bottom: 1px solid whitesmoke;
+}
+.fa{
+  color: lightgreen;
+}
+
+/*HOME*/
+#carouselExampleIndicators{
+  margin-bottom: 10%;
+}
+
+.carousel-item img{
+  height: 600px;
+  width: 100%;
+}
+
+/*NAVBAR*/
+.navbar-nav li a {
+  font-size:20px;
+  letter-spacing: 2px;
+}
+.navbar-nav li b:hover, .btn b:hover{
+  color: darkorange;
+}
+
+.navbar h1 {
+  color: lightgreen;
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel-item img{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar h1 {
+    font-size: 35px;
+  }
+  .carousel-item img{
+    height: 250px;
+  }
+  li{
+    max-height: 30px;
+  }
+}
+
+.navbar-nav b{
+  color: whitesmoke;
+}
+
+/*CARD*/
+.card, .card-cart {
+  transition: all 0.3s ease;
+}
+
+.card:hover{
+  transform: scale(1.02);
+   box-shadow: 3px 3px 8px darkorange; 
+}
+
+.card-space{
+  margin: 7% 0%;
+}
+
+.price p{
+  font-size: 70px;
+  font-weight: 900;
+  z-index: 2;
+  position:absolute;
+  bottom: 20%;
+  right: 1%;
+  text-shadow: 2px 2px orange;
+}
+
+.iphone-space {
+  padding-top: 3%;
+}
+
+/*COMPARE*/
+.compare{
+  visibility:hidden;
+}
+
+.input-compare{
+  margin-bottom: 8%;
+}
+
+/*CART*/
+
+.card-cart{
+ margin-top: 10%;
+}
+
+.card-cart:hover{
+  transform: scale(1.01);
+  box-shadow: 2px 2px 4px whitesmoke; 
+  cursor: pointer;
+}
+
+
+/*MODAL*/
+.modal{
+  color: black;
+}
+
+/*CUSTOM BURGER*/
+.hamburger{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hamburger .line{
+  height: 3px;
+  width: 30px;
+  display: block;
+  background-color: whitesmoke ;
+  border-radius: 4px;
+  margin-block-start: 10px;
+  transition: .5s;
+  margin-bottom: 10px;
+}
+
+.hamburger.active .line:nth-child(1){
+  rotate: (45deg);
+  transform:translateY(13px)
+}
+.hamburger.active .line:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .line:nth-child(3){
+  transform:translateY(-13px);
+  rotate: (-45deg);
+}
+
+/*footer*/
+.footer{
+  border: 5px solid whitesmoke;
+  border-radius: 10px;
+  margin-bottom: 1%;
+}
+
+.footer i{
+  font-size: 30px;
+}
+

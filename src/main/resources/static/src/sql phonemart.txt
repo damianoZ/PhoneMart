@@ -1,0 +1,91 @@
+CREATE TABLE IF NOT EXISTS phones (
+    id SERIAL PRIMARY KEY,
+	brand VARCHAR(50),
+	system VARCHAR(50),
+	gb VARCHAR(50),
+	model VARCHAR(50),
+	inch VARCHAR(50),
+	dimensions VARCHAR(50),
+	color VARCHAR(50),
+	weight VARCHAR(50),
+	description VARCHAR(2000),
+	quantity VARCHAR(50),
+	aviable boolean,
+	price VARCHAR(50)
+	
+);
+
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+	first_name VARCHAR(255),
+	last_name VARCHAR(255),
+	user_name VARCHAR(255),
+	email VARCHAR(255),
+	password VARCHAR(255),
+	address VARCHAR(255),
+	vip boolean,	
+
+);
+
+
+INSERT INTO phones (brand, system, model, gb, inch, dimensions, color, weight, description, quantity, aviable, price)
+VALUES
+    ('Iphone', 'iOS', '12', '128', '6.1', '146.7 x 71.5 x 7.4 mm', 'blue', '164',
+ 'Apple iPhone 12 è uno degli smartphone iOS più avanzati e completi che ci siano in circolazione. Dispone di un grande display da 6.1 pollici con una risoluzione di 2532x1170 pixel. Le funzionalità offerte da questo Apple iPhone 12 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Fotocamera da 12 megapixel ma che permette ugualmente al Apple iPhone 12 di scattare foto di buona qualità con una risoluzione di 4000x3000 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Lo spessore di 7.4mm è veramente contenuto e rende questo Apple iPhone 12 ancora più spettacolare.', '10', true, '1099'),
+
+('Iphone', 'iOS 14', '12', '128', '6.1', '146.7 x 71.5 x 7.4 mm', 'purple', '164',
+ 'Apple iPhone 12 è uno degli smartphone iOS più avanzati e completi che ci siano in circolazione. Dispone di un grande display da 6.1 pollici con una risoluzione di 2532x1170 pixel. Le funzionalità offerte da questo Apple iPhone 12 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Fotocamera da 12 megapixel ma che permette ugualmente al Apple iPhone 12 di scattare foto di buona qualità con una risoluzione di 4000x3000 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Lo spessore di 7.4mm è veramente contenuto e rende questo Apple iPhone 12 ancora più spettacolare.', '10', true, '1099'),
+
+('Iphone', 'iOS 15', '13', '256', '6.1', '146.7 x 71.5 x 7.65 mm', 'gold', '174',
+ 'Apple iPhone 13 è uno degli smartphone iOS più avanzati e completi che ci siano in circolazione. Dispone di un grande display da 6.1 pollici con una risoluzione di 2532x1170 pixel. Le funzionalità offerte da questo Apple iPhone 13 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Fotocamera da 12 megapixel ma che permette ugualmente al Apple iPhone 13 di scattare foto di buona qualità con una risoluzione di 4000x3000 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Lo spessore di 7.7mm è veramente contenuto e rende questo Apple iPhone 13 ancora più spettacolare.', '10', true, '1199'),
+
+('Iphone', 'iOS 15', '13', '256','6.1', '146.7 x 71.5 x 7.65 mm', 'green', '174',
+ 'Apple iPhone 13 è uno degli smartphone iOS più avanzati e completi che ci siano in circolazione. Dispone di un grande display da 6.1 pollici con una risoluzione di 2532x1170 pixel. Le funzionalità offerte da questo Apple iPhone 13 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Fotocamera da 12 megapixel ma che permette ugualmente al Apple iPhone 13 di scattare foto di buona qualità con una risoluzione di 4000x3000 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Lo spessore di 7.7mm è veramente contenuto e rende questo Apple iPhone 13 ancora più spettacolare.', '10', true, '1199'),
+
+('Oneplus', 'Android 11', '9', '256', '6.55', '160 x 74.2 x 8.7 mm', 'light grey', '192',
+ 'OnePlus 9 è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.55 pollici con una risoluzione di 2400x1080 pixel. Le funzionalità offerte da questo OnePlus 9 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Questo OnePlus 9 è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 48 megapixel che permette al OnePlus 9 di scattare foto di alta qualità con una risoluzione di 8000x6000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 8.7mm è contenuto e rende questo OnePlus 9 molto interessante.', '10', true, '799'),
+
+('Oneplus', 'Android 12', 'Nord', '256', '6.55', '164.3 x 75.6 x 8.5 mm', 'dark grey', '195',
+ 'OnePlus Nord è un smartphone Android di buon livello, fortemente votato all imaging, in grado di soddisfare anche l utente più esigente. Sorprende il display Touchscreen da 6.44 pollici che pone questo OnePlus al vertice della categoria. Risoluzione di 2400x1080 pixel. Sul versante delle funzionalità a questo OnePlus Nord non manca davvero nulla. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente, passando per la connettività Wi-fi e il GPS.
+Questo OnePlus Nord è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 48 megapixel che permette al OnePlus Nord di scattare foto di alta qualità con una risoluzione di 8000x6000 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Lo spessore di 8.2mm è contenuto e rende questo OnePlus Nord molto interessante.', '10', true, '499'),
+
+('Oppo', 'Android 11', 'Find x3 Pro', '512','6.7', '163.6 x 74 x 8.26 mm', 'black', '193',
+ 'Oppo Find X3 Pro è indubbiamente uno degli smartphone Android più avanzati e completi disponibili sul mercato, grazie alla ricca dotazione e all elevata multimedialità. Dispone di un grande display da 6.7 pollici e di una risoluzione da 3216x1440 pixel che è fra le più elevate attualmente in circolazione. Le funzionalità offerte da questo Oppo Find X3 Pro sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+L eccellenza di questo Oppo Find X3 Pro è completata da una fotocamera con un sensore da ben 50 megapixel che permette al Oppo Find X3 Pro di scattare foto di alta qualità con una risoluzione di 8150x6120 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Lo spessore di 8.3mm è contenuto e rende questo Oppo Find X3 Pro molto interessante.', '10', true, '899'),
+
+('Realme', 'Android 11', '8', '256', '6.4', '160.59 x 73.85 x 7.99 mm', 'dark blue', '177',
+ 'Realme 8 è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.67 pollici con una risoluzione di 2340x1080 pixel. Le funzionalità offerte da questo Realme 8 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Questo Realme 8 è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 108 megapixel che permette al Realme 8 di scattare foto di alta qualità con una risoluzione di 12000x9000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 9mm è contenuto e rende questo Realme 8 molto interessante.', '10', true, '399'),
+
+('Realme', 'Android 11', 'GT', '256','6.43', '160.59 x 73.85 x 7.99 mm', 'light green', '186',
+ 'Realme GT è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.67 pollici con una risoluzione di 2340x1080 pixel. Le funzionalità offerte da questo Realme GT sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+QuestoRealme GT è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 108 megapixel che permette al Realme GT di scattare foto di alta qualità con una risoluzione di 12000x9000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 9mm è contenuto e rende questo Realme GT molto interessante.', '10', true, '499'),
+
+('Realme', 'Android 11', 'GT Neo', '256','6.43', '158.5 x 73.3 x 8.4 mm', 'black', '179 ',
+ 'Realme GT Neo è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.67 pollici con una risoluzione di 2340x1080 pixel. Le funzionalità offerte da questo Realme GT Neo sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Questo Realme GT Neo è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 108 megapixel che permette al Realme GT Neo di scattare foto di alta qualità con una risoluzione di 12000x9000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 9mm è contenuto e rende questo Realme GT Neo molto interessante.', '10', true, '449'),
+
+('Samsung', 'Android 12', 'Galaxy S22', '256','6.1', '146 x 70.6 x 7.6 mm', 'green', '168',
+ 'Samsung Galaxy S22 è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.67 pollici con una risoluzione di 2340x1080 pixel. Le funzionalità offerte da questo Xiaomi Mi 10 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Questo Samsung Galaxy S22 è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 108 megapixel che permette alSamsung Galaxy S22 di scattare foto di alta qualità con una risoluzione di 12000x9000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 9mm è contenuto e rende questo Galaxy S22 molto interessante.', '10', true, '879'),
+
+('Xiaomi', 'Android 11', 'Mi 8', '128','6.4', '155 x 72.6 x 7.9 mm', 'peral', '182 ',
+ 'Xiaomi Mi 8 è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.67 pollici con una risoluzione di 2340x1080 pixel. Le funzionalità offerte da questo Xiaomi Mi 10 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Questo Xiaomi Mi 8 è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 108 megapixel che permette al Xiaomi Mi 8 di scattare foto di alta qualità con una risoluzione di 12000x9000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 9mm è contenuto e rende questo Xiaomi Mi 8 molto interessante.', '10', true, '399'),
+
+('Xiaomi', 'Android 11', 'Mi 9', '256','6.5', '165 x 73.6 x 7.2 mm', 'sky blue', '178 ',
+ 'Xiaomi Mi 9 è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.67 pollici con una risoluzione di 2340x1080 pixel. Le funzionalità offerte da questo Xiaomi Mi 10 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Questo Xiaomi Mi 9 è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 108 megapixel che permette al Xiaomi Mi 9 di scattare foto di alta qualità con una risoluzione di 12000x9000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 9mm è contenuto e rende questo Xiaomi Mi 9 molto interessante.', '10', true, '449'),
+
+('Xiaomi', 'Android 12', 'Mi 10', '256','6.6', '166 x 74.4 x 7.8 mm', 'blue', '188 ',
+ 'Xiaomi Mi 10 è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.67 pollici con una risoluzione di 2340x1080 pixel. Le funzionalità offerte da questo Xiaomi Mi 10 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Questo Xiaomi Mi 10 è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 108 megapixel che permette al Xiaomi Mi 10 di scattare foto di alta qualità con una risoluzione di 12000x9000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 9mm è contenuto e rende questo Xiaomi Mi 10 molto interessante.', '10', true, '599'),
+
+('Xiaomi', 'Android 12', 'Mi 10 ultra', '512','6.9', '179 x 75.4 x 7.9 mm', 'white', '202 ',
+ 'Xiaomi Mi 10 ultra è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.67 pollici con una risoluzione di 2340x1080 pixel. Le funzionalità offerte da questo Xiaomi Mi 10 sono veramente tante e all avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+Questo Xiaomi Mi 10 ultra è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 108 megapixel che permette al Xiaomi Mi 10 ultra di scattare foto di alta qualità con una risoluzione di 12000x9000 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Lo spessore di 9mm è contenuto e rende questo Xiaomi Mi 10 ultra molto interessante.', '10', true, '999')
